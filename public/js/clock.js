@@ -1,20 +1,26 @@
-var number = 0;
-
 var myVar = setInterval(function() {
     whatisthetime();
-}, 10);
+}, 1);
 
 function whatisthetime() {
     var d = new Date();
     document.getElementById("clock").innerHTML = d.toLocaleTimeString();
-    var number = /*(d.getHours()*60*60)+*/(d.getMinutes()*60)+d.getSeconds()+'.jpg';
-    // document.body.style.backgroundImage = 'url('+number+')';
-    // document.getElementById("number").innerHTML = youarel;
-    
-    var body = document.getElementsByTagName('body')[0];
-    body.style.backgroundImage = 'url(img/'+number+')';
+    var number = (d.getHours()*60*60)+(d.getMinutes()*60)+d.getSeconds()+'.jpg';
 
-    document.getElementById("number").innerHTML = number;
+
+    var img = new Image();
+// img.onload = function () {
+//    document.body.style.backgroundImage = img;
+// }
+// img.src = "url('img/"+number+"')";
+
+
+// $(img).appendTo('body');
+
+
+
+    // this one works, backup!
+    document.body.style.backgroundImage = "url('img/"+number+"')";
 }
 
 /* fading interface */
