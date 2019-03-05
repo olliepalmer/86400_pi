@@ -20,7 +20,7 @@ function whatisthetime() {
 
 
     // this one works, backup!
-    document.body.style.backgroundImage = "url('img/"+number+"')";
+    document.body.style.backgroundImage = "url('img_640/"+number+"')";
 }
 
 /* fading interface */
