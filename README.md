@@ -14,3 +14,5 @@ Thanks to Jasper van Loenen for getting this implementation started!
 ## RPi setup
 
 [ssh access](https://www.losant.com/blog/getting-started-with-the-raspberry-pi-zero-w-without-a-monitor)
+
+[pi as kiosk](https://pimylifeup.com/raspberry-pi-kiosk/)

@@ -23,13 +23,13 @@ app.get('/shutdown', function(req, res) {
     res.send('ok');
     console.log('shutting down!');
     res.redirect('/');
-    // exec('shutdown -h now', (err, stdout, stderr) => {
-    //   if (err) {
-    //     // node couldn't execute the command
-    //     console.log('some error!');
-    //     return;
-    //   }
-    // });
+    exec('shutdown -h now', (err, stdout, stderr) => {
+      if (err) {
+        // node couldn't execute the command
+        console.log('some error!');
+        return;
+      }
+    });
 });
 
 
