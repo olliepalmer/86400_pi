@@ -29,7 +29,10 @@ $(document).mousemove(function() {
 // this part works
 function whatisthetime() {
     var d = new Date();
-    document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+    // document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+    document.getElementById("hh").innerHTML = (d.getHours() < 10? '0' : '') + d.getHours();
+    document.getElementById("mm").innerHTML = (d.getMinutes() < 10? '0' : '') + d.getMinutes();
+    document.getElementById("ss").innerHTML = (d.getSeconds() < 10? '0' : '') + d.getSeconds();
     var number = (d.getHours() * 60 * 60) + (d.getMinutes() * 60) + d.getSeconds() + '.jpg';
     var img = new Image();
     document.body.style.backgroundImage = "url('img/" + number + "')";
