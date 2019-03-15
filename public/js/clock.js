@@ -33,8 +33,8 @@ function whatisthetime() {
     var number = (d.getHours() * 60 * 60) + (d.getMinutes() * 60) + d.getSeconds() + '.jpg';
     var img = new Image();
     document.body.style.backgroundImage = "url('img/" + number + "')";
-    clock()
-    // setTimeout(clock, 200)
+    // clock()
+    setTimeout(clock, 100);
 }
 
 function clock() {
