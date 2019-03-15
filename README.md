@@ -15,4 +15,8 @@ Thanks to Jasper van Loenen for getting this implementation started!
 
 [ssh access](https://www.losant.com/blog/getting-started-with-the-raspberry-pi-zero-w-without-a-monitor)
 
-[pi as kiosk](https://pimylifeup.com/raspberry-pi-kiosk/)
+pi as kiosk
+[1](https://pimylifeup.com/raspberry-pi-kiosk/)
+[2 - recommended by Jasper](https://blog.gordonturner.com/2017/07/22/raspberry-pi-full-screen-browser-raspbian-july-2017/)
+
+[3 - hide boot screens!](https://raspberrypi.stackexchange.com/questions/59310/remove-boot-messages-all-text-in-jessie)
