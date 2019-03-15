@@ -2,7 +2,7 @@ var justHidden = false;
 var j;
 var myVar = setInterval(function() {
     whatisthetime();
-}, 1000);
+}, 50);
 
 function hide() {
   $('html').css({
