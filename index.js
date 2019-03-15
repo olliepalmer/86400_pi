@@ -36,7 +36,7 @@ app.get('/shutdown', function(req, res) {
 app.get('/h_plus', function(req, res) {
     // res.send('ok');
     console.log('h+');
-    exec('date --set="+1 hour"', (err, stdout, stderr) => {
+    exec('sudo date --set="+1 hour"', (err, stdout, stderr) => {
       if (err) {
         // node couldn't execute the command
         console.log('some error!');
@@ -50,7 +50,7 @@ app.get('/h_minus', function(req, res) {
     // res.send('ok');
     console.log('h-');
     // do fancy time up stuff
-    exec('date --set="-1 hour"', (err, stdout, stderr) => {
+    exec('sudo date --set="-1 hour"', (err, stdout, stderr) => {
       if (err) {
         // node couldn't execute the command
         console.log('some error!');
@@ -64,7 +64,7 @@ app.get('/m_plus', function(req, res) {
     // res.send('ok');
     console.log('m+');
     // do fancy time up stuff
-    exec('date --set="+1 minute"', (err, stdout, stderr) => {
+    exec('sudo date --set="+1 minute"', (err, stdout, stderr) => {
       if (err) {
         // node couldn't execute the command
         console.log('some error!');
@@ -78,7 +78,7 @@ app.get('/m_minus', function(req, res) {
     // res.send('ok');
     console.log('m-');
     // do fancy time up stuff
-    exec('date --set="-1 minute"', (err, stdout, stderr) => {
+    exec('sudo date --set="-1 minute"', (err, stdout, stderr) => {
       if (err) {
         // node couldn't execute the command
         console.log('some error!');
@@ -92,7 +92,7 @@ app.get('/s_plus', function(req, res) {
     // res.send('ok');
     console.log('s+');
     // do fancy time up stuff
-    exec('date --set="+1 second"', (err, stdout, stderr) => {
+    exec('sudo date --set="+1 second"', (err, stdout, stderr) => {
       if (err) {
         // node couldn't execute the command
         console.log('some error!');
@@ -106,7 +106,7 @@ app.get('/s_minus', function(req, res) {
     // res.send('ok');
     console.log('s-');
     // do fancy time up stuff
-    exec('date --set="-1 second"', (err, stdout, stderr) => {
+    exec('sudo date --set="-1 second"', (err, stdout, stderr) => {
       if (err) {
         // node couldn't execute the command
         console.log('some error!');
