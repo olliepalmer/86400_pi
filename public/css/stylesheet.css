@@ -14,6 +14,7 @@ body {
   background-position: center center;
   background-size:auto auto;
   transition: background-image 0.1s ease-in-out;
+  cursor: url('css/cursor.png'), auto;
 }
 
 
@@ -38,12 +39,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 640px;
-  /*whatever width you want*/
   text-align: center;
 }
 
 .interface {
-  color: #ED553B;
+  color: #c00;
 }
 
 p {
@@ -58,4 +58,38 @@ a, a:visited {
 a:hover {
   color: #0894A1;
   background: #112F41;
+}
+
+#yes {
+  background: #6f3;
+  color: white;
+}
+
+#no {
+  background: #c00;
+  color: white;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  font-size: 50px;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-align: center;
 }

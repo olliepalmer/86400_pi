@@ -23,7 +23,7 @@ app.get('/shutdown', function(req, res) {
     res.send('ok');
     console.log('shutting down!');
     res.redirect('/');
-    exec('shutdown -h now', (err, stdout, stderr) => {
+    exec('sudo shutdown -h now', (err, stdout, stderr) => {
       if (err) {
         // node couldn't execute the command
         console.log('some error!');
@@ -124,4 +124,3 @@ app.listen(8000, function (err) {
         console.log("App started at port 8000");
     }
 });
-
