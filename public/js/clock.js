@@ -1,48 +1,27 @@
-var justHidden = false;
-var j;
+var psec = 0;
+var sec = 0;
+var d;
+
+// check the time every 50ms
 var myVar = setInterval(function() {
     whatisthetime();
-}, 200);
+}, 10);
 
-function hide() {
-  $('html').css({
-    cursor: 'none'
-  });
-  justHidden = true;
-  setTimeout(function() {
-    justHidden = false;
-  }, 500);
-}
-
-$(document).mousemove(function() {
-  if (!justHidden) {
-    justHidden = false;
-    console.log('move');
-    clearTimeout(j);
-    $('html').css({
-      cursor: 'default'
-    });
-    j = setTimeout(hide, 1000);
-  }
-})
-
-// this part works
 function whatisthetime() {
-    var d = new Date();
-    // document.getElementById("clock").innerHTML = d.toLocaleTimeString();
-    var number = (d.getHours() * 60 * 60) + (d.getMinutes() * 60) + d.getSeconds() + '.jpg';
-    var img = new Image();
-    document.body.style.backgroundImage = "url('img/" + number + "')";
-    // clock()
-    setTimeout(clock, 100);
+  d = new Date();
+  sec = d.getSeconds();
+  if (sec != psec) update();
 }
 
-function clock() {
-    var d = new Date();
+function update() {
+  var number = (d.getHours() * 60 * 60) + (d.getMinutes() * 60) + d.getSeconds() + '.jpg';
+  var img = new Image();
+    document.body.style.backgroundImage = "url('img/" + number + "')";
     document.getElementById("hh").innerHTML = (d.getHours() < 10? '0' : '') + d.getHours();
     document.getElementById("mm").innerHTML = (d.getMinutes() < 10? '0' : '') + d.getMinutes();
     document.getElementById("ss").innerHTML = (d.getSeconds() < 10? '0' : '') + d.getSeconds();
 }
+
 
 /* fading interface */
 
@@ -71,7 +50,6 @@ function on() {
 function off() {
   document.getElementById("overlay").style.display = "none";
 }
-
 
 $(window).mousedown(function(e) {
     clearTimeout(this.downTimer);
