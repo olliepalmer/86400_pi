@@ -5,7 +5,7 @@ var d;
 // check the time every 50ms
 var myVar = setInterval(function() {
     whatisthetime();
-}, 10);
+}, 50);
 
 function whatisthetime() {
   d = new Date();
@@ -20,6 +20,7 @@ function update() {
     document.getElementById("hh").innerHTML = (d.getHours() < 10? '0' : '') + d.getHours();
     document.getElementById("mm").innerHTML = (d.getMinutes() < 10? '0' : '') + d.getMinutes();
     document.getElementById("ss").innerHTML = (d.getSeconds() < 10? '0' : '') + d.getSeconds();
+    psec = sec;
 }
 
 
