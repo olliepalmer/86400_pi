@@ -19,8 +19,8 @@ function update() {
   document.getElementById("hh").innerHTML = (d.getHours() < 10? '0' : '') + d.getHours();
   document.getElementById("mm").innerHTML = (d.getMinutes() < 10? '0' : '') + d.getMinutes();
   document.getElementById("ss").innerHTML = (d.getSeconds() < 10? '0' : '') + d.getSeconds();
-  $('body').css('background-image', "url('img/" + number + "')");
-      // document.body.style.backgroundImage = "url('img/" + number + "')";
+  // $('body').css('background-image', "url('img/" + number + "')");
+  document.body.style.backgroundImage = "url('img/" + number + "')";
   psec = sec;
 }
 
