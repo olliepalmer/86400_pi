@@ -12,5 +12,8 @@
     "child_process": "^1.0.2",
     "express": "^4.16.4",
     "nunjucks": "^3.1.7"
+  },
+  "devDependencies": {
+    "grunt-imageoptim": "^1.4.4"
   }
 }
