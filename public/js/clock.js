@@ -20,7 +20,7 @@ function update() {
   document.getElementById("mm").innerHTML = (d.getMinutes() < 10? '0' : '') + d.getMinutes();
   document.getElementById("ss").innerHTML = (d.getSeconds() < 10? '0' : '') + d.getSeconds();
   // $('body').css('background-image', "url('img/" + number + "')");
-  document.body.style.backgroundImage = "url('img/" + number + "')";
+  document.body.style.backgroundImage = "url('img_320/" + number + "')";
   psec = sec;
 }
 
