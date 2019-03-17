@@ -12,7 +12,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto; /* 'contain' if using large images; 'auto' if using small ones */
+  background-size: contain; /* 'contain' if using large images; 'auto' if using small ones */
   transition: background-image 0.1s ease-in-out;
   /*cursor: url('css/cursor.png'), auto;*/
   overflow: hidden;
