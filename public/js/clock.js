@@ -18,12 +18,11 @@ function whatisthetime() {
 
 function update() {
   var number = (d.getHours() * 60 * 60) + (d.getMinutes() * 60) + d.getSeconds() + '.jpg';
-  // var img = new Image();
   document.getElementById("hh").innerHTML = (d.getHours() < 10? '0' : '') + d.getHours();
   document.getElementById("mm").innerHTML = (d.getMinutes() < 10? '0' : '') + d.getMinutes();
   document.getElementById("ss").innerHTML = (d.getSeconds() < 10? '0' : '') + d.getSeconds();
   // $('body').css('background-image', "url('img/" + number + "')");
-  document.body.style.backgroundImage = "url('img_solidcolor/" + number + "')";
+  document.body.style.backgroundImage = "url('img/" + number + "')";
 }
 
 
