@@ -51,6 +51,7 @@ p {
     text-shadow: 0px 0px 100px rgba(0,0,0,0.5);
     /*transition: background-image 0.2s fadeIn;*/
 }
+
 a, a:visited {
   color: #c00;
   text-decoration: none;
@@ -58,17 +59,21 @@ a, a:visited {
 
 a:hover {
   color: #0894A1;
-  background: #112F41;
+  /*background: #112F41;*/
 }
 
-#yes {
+#yes, #show {
   background: #6f3;
   color: white;
 }
 
-#no {
+#no, #off {
   background: #c00;
   color: white;
+}
+
+#noclock {
+  display: none;
 }
 
 #overlay {

@@ -17,11 +17,21 @@
 <div class="outer">
   <div class="middle">
     <div class="inner">
-		<div class="interface up"><p><a onclick="on()" class="off">&#8623;</a><a href="/h_plus">&#43;&#43;</a> <a href="/m_plus">&#43;&#43;</a> <a href="/s_plus">&#43;&#43;</a>&nbsp;</p></div>
+		
+		<div class="interface up">
+			<p><a id="off" onclick="on()" class="off">off</a></p>
+			<p><a href="/h_plus">&#43;&#43;</a> <a href="/m_plus">&#43;&#43;</a> <a href="/s_plus">&#43;&#43;</a></p>
+		</div>
+		
 		<p id="clock"><span id="hh">&nbsp;&nbsp;</span>:<span id="mm">&nbsp;&nbsp;</span>:<span id="ss">&nbsp;&nbsp;</span></p>
-		<div class="interface down"><p><a href="/h_minus">&#8722;&#8722;</a> <a href="/m_minus">&#8722;&#8722;</a> <a href="/s_minus">&#8722;&#8722;</a></p></div>
+		<p id="noclock">no clock</p>
+		
+		<div class="interface down">
+			<p><a href="/h_minus">&#8722;&#8722;</a> <a href="/m_minus">&#8722;&#8722;</a> <a href="/s_minus">&#8722;&#8722;</a></p>
+			<p><a id="show" onclick="hide()">hide</a></p>
+		</div>
     </div>
-  </div>
+  </div>		
 </div>
 
 </div>

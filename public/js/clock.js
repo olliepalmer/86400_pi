@@ -61,3 +61,17 @@ $(window).mousedown(function(e) {
 }).mouseup(function(e) {
     clearTimeout(this.downTimer);
 });
+
+function hide() {
+  var x = document.getElementById("clock");
+  var y = document.getElementById("noclock");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+    document.getElementById("show").innerHTML = "hide";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block";
+    document.getElementById("show").innerHTML = "show";
+  }
+}
