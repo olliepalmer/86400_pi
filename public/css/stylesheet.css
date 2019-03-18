@@ -62,12 +62,12 @@ a:hover {
   /*background: #112F41;*/
 }
 
-#yes, #show {
+#yes {
   background: #6f3;
   color: white;
 }
 
-#no, #off {
+#no, #off, #hide {
   background: #c00;
   color: white;
 }
