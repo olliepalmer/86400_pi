@@ -62,17 +62,11 @@ $(window).mousedown(function(e) {
     clearTimeout(this.downTimer);
 });
 
-// function hide() {
-//   var x = document.getElementById("clock");
-//   if (x.style.display == "none") {
-//     x.style.display = "block";
-//     document.getElementById("show").innerHTML = "hide";
-//   } else {
-//     x.style.display = "none";
-//   }
-// }
-
-
 function hide() {
   document.getElementById("clock").classList.toggle('interface');
+  if ( document.getElementById("clock").classList.contains('interface') ) {
+    document.getElementById("hide").innerHTML = "show";
+  } else {
+    document.getElementById("hide").innerHTML = "hide";
+  }
 }
