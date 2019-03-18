@@ -10,7 +10,10 @@ var myVar = setInterval(function() {
 function whatisthetime() {
   d = new Date();
   sec = d.getSeconds();
-  if (sec != psec) update();
+  if (sec != psec){
+      psec = sec;
+      update();
+  }
 }
 
 function update() {
@@ -21,7 +24,6 @@ function update() {
   document.getElementById("ss").innerHTML = (d.getSeconds() < 10? '0' : '') + d.getSeconds();
   // $('body').css('background-image', "url('img/" + number + "')");
   document.body.style.backgroundImage = "url('img/" + number + "')";
-  psec = sec;
 }
 
 
