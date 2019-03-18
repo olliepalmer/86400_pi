@@ -20,7 +20,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/shutdown', function(req, res) {
-    res.send('ok');
+    res.send('ok, goodbye');
     console.log('shutting down!');
     res.redirect('/');
     exec('sudo shutdown -h now', (err, stdout, stderr) => {
