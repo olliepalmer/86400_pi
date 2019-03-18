@@ -5,7 +5,7 @@ var d;
 // check the time every 50ms
 var myVar = setInterval(function() {
     whatisthetime();
-}, 100);
+}, 20);
 
 function whatisthetime() {
   d = new Date();
@@ -34,14 +34,14 @@ var _delay = setInterval(delayCheck, 500);
 
 function delayCheck() {
     if (timedelay == 3) {
-        $('.interface').fadeOut();
+        $('.interface').hide(); /* change to $('.interface').fadeOut(); on a fast computer */
         timedelay = 1;
     }
     timedelay = timedelay + 1;
 }
 
 function showAllEvent() {
-    $('.interface').fadeIn();
+    $('.interface').show();/* change to $('.interface').fadeIn(); on a fast computer */
     timedelay = 1;
     clearInterval(_delay);
     _delay = setInterval(delayCheck, 500);
