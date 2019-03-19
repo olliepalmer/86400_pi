@@ -121,7 +121,7 @@ app.get('/killbrowser', function(req, res) {
     // res.send('ok');
     console.log('killing chromium-browser');
     // do fancy time up stuff
-    exec('sudo killall chromium"', (err, stdout, stderr) => {
+    exec('sudo pkill chromium"', (err, stdout, stderr) => {
       if (err) {
         // node couldn't execute the command
         console.log('some error!');
