@@ -117,6 +117,20 @@ app.get('/s_minus', function(req, res) {
 });
 
 
+app.get('/killbrowser', function(req, res) {
+    // res.send('ok');
+    console.log('killing chromium-browser');
+    // do fancy time up stuff
+    exec('sudo killall chromium-browser"', (err, stdout, stderr) => {
+      if (err) {
+        // node couldn't execute the command
+        console.log('some error!');
+        return;
+      }
+    });
+    res.redirect('/');
+});
+
 app.listen(8000, function (err) {
     if (err) {
         console.log(err);

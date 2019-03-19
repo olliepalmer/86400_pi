@@ -1,6 +1,7 @@
 var psec = 0;
 var sec = 0;
 var d;
+var images = true;
 
 // check the time every 50ms
 var myVar = setInterval(function() {
@@ -22,7 +23,11 @@ function update() {
   document.getElementById("mm").innerHTML = (d.getMinutes() < 10? '0' : '') + d.getMinutes();
   document.getElementById("ss").innerHTML = (d.getSeconds() < 10? '0' : '') + d.getSeconds();
   // $('body').css('background-image', "url('img/" + number + "')");
-  document.body.style.backgroundImage = "url('img/" + number + "')";
+  if (images){
+    document.body.style.backgroundImage = "url('img/" + number + "')";
+  } else {
+    document.body.style.backgroundImage = 'none';
+  }
 }
 
 
@@ -37,6 +42,7 @@ function delayCheck() {
         timedelay = 1;
     }
     timedelay = timedelay + 1;
+    images = true;
 }
 
 function showAllEvent() {
@@ -44,6 +50,8 @@ function showAllEvent() {
     timedelay = 1;
     clearInterval(_delay);
     _delay = setInterval(delayCheck, 500);
+    images = false;
+
 }
 
 function on() {
