@@ -1,0 +1,13 @@
+[Unit]
+Description=86400 Node Server
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi/86400_pi
+ExecStart=npm start
+Restart=on-failure
+User=pi
+Environment=PORT=8000
+
+[Install]
+WantedBy=multi-user.target

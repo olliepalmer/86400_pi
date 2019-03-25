@@ -69,6 +69,7 @@ $(window).mousedown(function(e) {
     }, 2000);
 }).mouseup(function(e) {
     clearTimeout(this.downTimer);
+    update();
 });
 
 function hide() {
