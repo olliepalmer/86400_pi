@@ -58,8 +58,13 @@ function on() {
   document.getElementById("overlay").style.display = "block";
 }
 
+function on2() {
+  document.getElementById("overlay2").style.display = "block";
+}
+
 function off() {
   document.getElementById("overlay").style.display = "none";
+  document.getElementById("overlay2").style.display = "none";
 }
 
 $(window).mousedown(function(e) {
@@ -75,8 +80,8 @@ $(window).mousedown(function(e) {
 function hide() {
   document.getElementById("clock").classList.toggle('interface');
   if ( document.getElementById("clock").classList.contains('interface') ) {
-    document.getElementById("hide").innerHTML = "show";
+    document.getElementById("hide").innerHTML = "show clock";
   } else {
-    document.getElementById("hide").innerHTML = "hide";
+    document.getElementById("hide").innerHTML = "hide clock";
   }
 }

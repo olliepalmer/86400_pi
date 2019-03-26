@@ -12,15 +12,28 @@
 <div id="overlay" onclick="off()">
   <div id="text"><p><a id="yes" href="/shutdown"> switch off </a></p>
   	<p><a id="no" onclick="no()"> or keep on </a></p></div>
-  	<div id="kill"><a href="/killbrowser">x</a></div>
 </div>
+
+<div id="overlay2" onclick="off()">
+  <div id="text"><h1>credits</h1>
+  	<p>one day (2019)</p>
+  	<p>a viewer for the film 86400 (2016) by ollie palmer</p>
+  	<br>
+  	<p>this project is by ollie palmer</p>
+  	<p>with technical assistance by jasper van loenen</p>
+  	<p>images scraped from google images in 2015-16</p>
+  	<p>for more information, see olliepalmer.com/86400</p>
+  	<br>
+  	<p><a id="no" onclick="no()"> back </a></p></div>
+</div>
+
 
 <div class="outer">
   <div class="middle">
     <div class="inner">
 		
 		<div class="interface up">
-			<a id="off" onclick="on()" class="off">off</a>
+			<a id="hide" onclick="hide()">hide clock</a>
 			<p><a href="/h_plus_ten">&#43;</a><a href="/h_plus">&#43;</a>&nbsp;<a href="/m_plus_ten">&#43;</a><a href="/m_plus">&#43;</a>&nbsp;<a href="/s_plus_ten">&#43;</a><a href="/s_plus">&#43;</a></p>
 		</div>
 		
@@ -28,7 +41,7 @@
 		
 		<div class="interface down">
 			<p><a href="/h_minus_ten">&#8722;</a><a href="/h_minus">&#8722;</a>&nbsp;<a href="/m_minus_ten">&#8722;</a><a href="/m_minus">&#8722;</a>&nbsp;<a href="/s_minus_ten">&#8722;</a><a href="/s_minus">&#8722;</a></p>
-			<a id="hide" onclick="hide()">hide</a>
+			<a id="off" onclick="on2()" class="off">credits</a> <a id="off" onclick="on()" class="off">turn off</a>
 		</div>
     </div>
   </div>		

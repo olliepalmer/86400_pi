@@ -72,6 +72,10 @@ a, a:visited {
 	text-decoration: none;
 }
 
+h1 {
+	font-size: 35px;
+}
+
 a:hover {
 	color: #0894A1;
 	/*background: #112F41;*/
@@ -92,7 +96,8 @@ a:hover {
 	display: none;
 }
 
-#overlay {
+#overlay, #overlay2 {
+	background-color: rgba(0,0,0,0.8);
 	position: fixed;
 	display: none;
 	width: 100%;
@@ -101,9 +106,13 @@ a:hover {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0,0,0,0.5);
 	z-index: 2;
 	font-size: 50px;
+}
+
+#overlay2 p {
+	line-height: 20px;
+	font-size: 15px;
 }
 
 #text{
