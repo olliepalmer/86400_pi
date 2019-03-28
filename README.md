@@ -27,3 +27,8 @@ For some unknown reason, the Pi's wifi no longer works. ??
 ## Backup
 
 Backup file for the Pi is at `Desktop` / `oneday_backup.dmg`. I will back this up to a server at some point too, and list where it is here. The backup file was created using [this tutorial](https://computers.tutsplus.com/articles/how-to-clone-raspberry-pi-sd-cards-using-the-command-line-in-os-x--mac-59911).
+
+
+## Loading RPi SD cards on Mac
+
+[see this article](https://www.jeffgeerling.com/blog/2017/mount-raspberry-pi-sd-card-on-mac-read-only-osxfuse-and-ext4fuse)
