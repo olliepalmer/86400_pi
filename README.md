@@ -1,6 +1,7 @@
 
 # 86400_pi 
-# 👉️ the "One Day" setup ⏰️
+
+# The "One Day" setup ⏰️
 
 This is the implementation of 86400 on a Raspberry Pi. It runs the clock via an HTML file, updating the background image every second.
 
@@ -24,7 +25,7 @@ The kiosk.sh file is included in the root of this folder. Follow guide in link 1
 
 For some unknown reason, the Pi's wifi no longer works. ??
 
-## Backup
+## Backup
 
 Backup file for the Pi is at `Desktop` / `oneday_backup.dmg`. I will back this up to a server at some point too, and list where it is here. The backup file was created using [this tutorial](https://computers.tutsplus.com/articles/how-to-clone-raspberry-pi-sd-cards-using-the-command-line-in-os-x--mac-59911).
 
