@@ -1,0 +1,16 @@
+[Unit]
+Description=Chromium Kiosk
+Wants=graphical.target
+After=graphical.target
+
+[Service]
+Environment=DISPLAY=:0.0
+Environment=XAUTHORITY=/home/oneday/.Xauthority
+Type=simple
+ExecStart=/bin/bash /home/oneday/kiosk.sh
+Restart=on-abort
+User=oneday
+Group=oneday
+
+[Install]
+WantedBy=graphical.target
