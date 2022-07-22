@@ -7,7 +7,7 @@ After=graphical.target
 Environment=DISPLAY=:0.0
 Environment=XAUTHORITY=/home/oneday/.Xauthority
 Type=simple
-ExecStart=/bin/bash ~/86400_pi/kiosk.sh
+ExecStart=/bin/bash /home/oneday/86400_pi/kiosk.sh
 Restart=on-abort
 User=oneday
 Group=oneday
