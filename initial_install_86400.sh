@@ -5,6 +5,8 @@
 # chmod +x initial_install_86400.sh
 # sh initial_install_86400.sh
 
+# download the images in case they aren't in github
+# wget https://www.dropbox.com/sh/1273ba9hgocqv8n/AAAm_Ve9oqNT4HwBmZKc6Foma?dl=1
 
 sudo cp screen_driver/to_boot/* /boot/.
 sudo cp screen_driver/to_boot_overlays/* /boot/overlays/.

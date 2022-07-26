@@ -24,7 +24,7 @@ function update() {
   document.getElementById("ss").innerHTML = (d.getSeconds() < 10? '0' : '') + d.getSeconds();
   // $('body').css('background-image', "url('img/" + number + "')");
   if (images){
-    document.body.style.backgroundImage = "url('img/" + number + "')";
+    document.body.style.backgroundImage = "url('/img/" + number + "')";
   } else {
     document.body.style.backgroundImage = 'none';
   }
@@ -70,7 +70,7 @@ function off() {
 $(window).mousedown(function(e) {
     clearTimeout(this.downTimer);
     this.downTimer = setTimeout(function() {
-        alert('mousedown > 2 sec');   
+        alert('mousedown > 2 sec');
     }, 2000);
 }).mouseup(function(e) {
     clearTimeout(this.downTimer);

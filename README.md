@@ -1,4 +1,4 @@
-# 86400_pi 
+# 86400_pi
 
 # The "One Day" Raspberry Pi setup ⏰️
 
@@ -10,12 +10,12 @@ The viewers launch a full-screen website on launch. Each viewer connects to the 
 
 Note this repo contains the drivers for the specific screens, the website, and everything else EXCEPT the images. They're too big for a repo.
 
-The website requires NPM to run the server. 
+The website requires NPM to run the server.
 
-Thanks to Jasper van Loenen for all of the help with this project!
+Thanks to [Jasper van Loenen](https://github.com/javl)  for all of the help with this project!
 
 The rest of this file is just personal notes in case I fudge up something on the Pi.
 
-There is a parallel Google Doc with all of the instructions to make each SD card (cloning seems to just mess up each time) and at some point I'll integrate those intstructions into either a script (that'd be great!) or, more likely in the short-term, a tutorial that I follow each time. 
+There is a parallel Google Doc with all of the instructions to make each SD card (cloning seems to just mess up each time) and at some point I'll integrate those intstructions into either a script (that'd be great!) or, more likely in the short-term, a tutorial that I follow each time.
 
 Anyway, this is all in progress. The original versions of these viewers were made in 2019, and I am finally updating them now. Such is life.
